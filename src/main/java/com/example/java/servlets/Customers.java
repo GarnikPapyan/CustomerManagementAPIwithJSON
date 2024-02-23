@@ -12,7 +12,7 @@ public class Customers {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int customerId;
-    @Column(name = "name", nullable = false, length = 50)
+    @Column(name = "name", nullable = false, length = 45)
     private String name;
     @Column(name = "email", nullable = false, length = 50)
     private String email;
