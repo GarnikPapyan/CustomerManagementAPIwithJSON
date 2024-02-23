@@ -28,7 +28,7 @@ Gson: Library for JSON serialization and deserialization.
 5. DefaultValue - This class in order to add a value to the data base by default, run it first.
 
 ## Functionality
-1. Creating Customers
+## 1. Creating Customers
  
 The doPost() method in ServletService.java handles HTTP POST requests to create new customers. 
 JSON data containing customer details (name, email, address) is parsed, and a new customer is added to the database using Hibernate.
@@ -52,7 +52,7 @@ To add a new customer using Postman, you can follow these steps:
 This will send a POST request to your servlet endpoint with the provided JSON data, creating a new customer with the specified details in the database. 
 Make sure your servlet is properly configured to handle POST requests and parse JSON data from the request body.
 
-2. Retrieving Customers
+## 2. Retrieving Customers
  
 The doGet() method in ServletService.java handles HTTP GET requests to retrieve all customers from the database. 
 Customer data is fetched using Hibernate and converted to JSON format before being sent as a response.To view the total number of customers using Postman:
@@ -67,7 +67,7 @@ Customer data is fetched using Hibernate and converted to JSON format before bei
 Ensure that your servlet is properly configured to handle GET requests and retrieve customer data from the database. 
 Also, make sure your servlet returns the response in an appropriate format, such as JSON or plain text, indicating the count of customers.
 
-3. Deleting Customers
+## 3. Deleting Customers
  
 The doDelete() method in ServletService.java handles HTTP DELETE requests to delete customers from the database. 
 The customer ID is extracted from the request parameters, and the corresponding customer is deleted using Hibernate.
@@ -77,7 +77,7 @@ Send an HTTP DELETE request to the following URL: http://localhost:8080/Customer
 
 This can be accomplished using various tools or libraries, such as curl in the command line or HTTP request libraries in your programming language (e.g., HttpClient for Java).
 
-4. Below are the methods of the CustomersService class along with their explanations:
+## 4. Below are the methods of the CustomersService class along with their explanations:
    
    4.1 createCustomer(String name, String email, String address) `
    
